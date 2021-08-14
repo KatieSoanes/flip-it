@@ -130,13 +130,4 @@ a:link
     transform: rotateY(180deg);
   }
 
-  /*
-  .front, .back 
-  {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 0px;
-    background: #ffe6e6;
-   
-  } */ 
+  
