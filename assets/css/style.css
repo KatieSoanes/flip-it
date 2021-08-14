@@ -74,46 +74,39 @@ a:link
 }
 
 /* Easy Level of game styling */
-/*
-.row ATTEMPT DIFFER CODE FIRST 
+
+  .game
+  {
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.flipcard
 {
-    text-align: center;
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.card 
-{
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    background-color: #e05915; 
-} */
-
-.card_outer {
-    height: 100px;
-    width: 100px;
-    background: yellow;
-    perspective: 1200px;
-    float: left;
-    margin-left: 40px;
-    margin-top: 50px;
-}
-
-#card_inner 
-{
-    position: absolute;
-    height: 100%;
+.flip-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  }
+  
+  .front, .back 
+  {
     width: 100%;
-    transform-style: preserve-3d;
-    transition: all 0.75s ease;
-}
-
-.front, .back 
-{
-    position: absolute;
     height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-}
-
-
-
+    padding: 20px;
+    position: absolute;
+    border-radius: 0px;
+    background: #ffe6e6;
+  }
