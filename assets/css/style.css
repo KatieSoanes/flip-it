@@ -82,31 +82,61 @@ a:link
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+   
   }
 
-.flipcard
+.flip-card
 {
   width: 640px;
   height: 640px;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  /*display: flex;
+  flex-wrap: wrap; */
+  
 }
 
+/*Marina code */ 
 .flip-card {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
     margin: 5px;
     position: relative;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  }
+  } 
   
+  /* CSS FLIP CARD YOUTUBE */ 
+  .front
+  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #ffe6e6; 
+  }
+
+  .back
+  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #ffe6e6; 
+    transform: rotateY(180deg);
+  }
+
+  .flip-card:hover 
+  {
+    transform: rotateY(180deg);
+  }
+
+  /*
   .front, .back 
   {
     width: 100%;
     height: 100%;
-    padding: 20px;
     position: absolute;
     border-radius: 0px;
     background: #ffe6e6;
-  }
+   
+  } */ 
